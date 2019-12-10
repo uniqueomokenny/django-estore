@@ -9,6 +9,7 @@ class HomeView(ListView):
     model = Item
     template_name = 'home.html'
     context_object_name = 'items'
+    paginate_by = 9
 
 
 def checkout(request):
