@@ -65,7 +65,7 @@
       </div>
   {% endif %}
 
-  <div class="mt-5 pt-4 vh-100">
+  <div class="mt-5 pt-4">
       {% block content %}
 
       {% endblock %}
@@ -89,6 +89,9 @@
     new WOW().init();
 
   </script>
+
+    {% block extra_scripts %}
+    {% endblock extra_scripts %}
 </body>
 
 </html>
